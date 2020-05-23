@@ -1,7 +1,20 @@
 # helmDemo
 Helm Implimentation Demo with Basic App
 
-List of Commands to Run:
+
+## Run with HelmFile
+
+
+List of Commands to Run with HelmFile
+
+```
+1. helmfile repos
+2. helmfile sync
+```
+
+List of Commands to Run with helm if individual
+
+
 ```
 1. helm install -f kanban-postgres.yaml postgres ./postgres
 2. helm install -f adminer.yaml adminer ./app
@@ -12,6 +25,8 @@ List of Commands to Run:
 7. helm list
 8. kubectl get deployments
 ```
+
+
 Architecture of App:
 
 ![alt text](https://miro.medium.com/max/1400/1*OfGTPIUBBnwF7QYgWTYkSA.png)

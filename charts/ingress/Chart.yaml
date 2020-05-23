@@ -12,7 +12,3 @@ home: https://github.com/shahmeetk/helmDemo
 maintainers:
   - name: Meet Shah
     url: https://github.com/shahmeetk
-dependencies:
-  - name: nginx-ingress
-    version: 1.36.0
-    repository: https://kubernetes-charts.storage.googleapis.com/
