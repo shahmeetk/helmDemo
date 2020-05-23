@@ -2,11 +2,13 @@ repositories:
   - name: stable
     url: https://kubernetes-charts.storage.googleapis.com
 
+  - name: bitnami
+    url: https://charts.bitnami.com/bitnami
+
 releases:
   - name: postgres
-    chart: ./charts/postgres
-    values:
-      - ./values/kanban-postgres.yaml
+    chart: bitnami/postgresql-ha
+    version: 3.2.6
 
   - name: adminer
     chart: ./charts/app
@@ -17,7 +19,7 @@ releases:
     chart: ./charts/app
     values:
       - ./values/kanban-app.yaml
-  
+
   - name: kanban-ui
     chart: ./charts/app
     values:
