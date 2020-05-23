@@ -9,7 +9,3 @@ keywords:
   - java
   - javascript
   - angular
-home: https://github.com/wkrzywiec/k8s-helm-helmfile/tree/master/helm
-maintainers:
-  - name: Wojtek Krzywiec
-    url: https://github.com/wkrzywiec
