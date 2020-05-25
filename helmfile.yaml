@@ -7,8 +7,10 @@ repositories:
 
 releases:
   - name: postgres
-    chart: bitnami/postgresql-ha
-    version: 3.2.6
+    chart: bitnami/postgresql
+    values:
+      - ./values/values-posgres.yaml
+    #version: 3.2.6
 
   - name: adminer
     chart: ./charts/app
@@ -33,3 +35,8 @@ releases:
     chart: ./charts/ingress
     values:
       - ./values/ingress.yaml
+
+  - name: postgres-config
+    chart: ./charts/postgres
+    values:
+      - ./values/kanban-postgres.yaml
